@@ -12,20 +12,25 @@ div{
   padding-top: 7px;
   padding-left: 4px;
 }
-.barra{
-  flex-direction: row;
+.lateral{
   background-color: aquamarine;
-  border: solid 1px black;
-  font-size: large;
-  flex: 1;
   height: 750px;
-  width: 300px;
-  padding-left: 20px;
+  width: 150px;
+  justify-content: center;
+}
+.barra{
+  display:flex;
+  flex-direction: column;
+  gap: 3px;
+  padding:0;
+  list-style: none;
+}
+li{
+  border-bottom: 1px solid black;
+  text
 }
 .prin{
-  flex-direction: row;
   background-color: aquamarine;
-  border: solid 1px black;
   font-size: large;
   flex: 4;
   height: 750px;
@@ -36,9 +41,15 @@ div{
 </head>
 <body>
 <div>
-<div class="barra"> 
-  Home
-</div>
+  <div class="lateral">
+<ul class="barra">
+  <li>Home</li>
+  <li>Servicios</li>
+  <li>Opciones</li>
+  <li>Planes</li>
+  <li>Contactos</li>
+</ul>
+  </div>
 <div class="prin">
   Contenido principal de la caja
 </div>
